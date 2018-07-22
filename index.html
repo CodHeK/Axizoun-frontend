@@ -45,7 +45,7 @@
             <div class="row">
                <div class="col-lg-6 col-md-6"></div>
                <div class="col-lg-6 col-md-6" class="signup-form-box">
-                  <div class="form-box">
+                  <div class="form-box" id="signup-box">
                      <div class="signup-label">
                         <h1 class="form-header-text">SignUp</h1>
                      </div>
@@ -106,7 +106,7 @@
                               </div>
                               <div class="row">
                                  <div class="col-md-12 already-login">
-                                    <p>Already have an account? <a href="#" class="login-link" data-toggle="modal" data-target="#employee-modal">LOGIN</a> </p>
+                                    <p>Already have an account? <a href="#" class="login-link" id="login-for-employee">LOGIN</a> </p>
                                  </div>
                               </div>
                         </div>
@@ -164,178 +164,162 @@
                            </div>
                            <div class="row">
                               <div class="col-md-12 already-login">
-                                 <p>Already have an account? <a href="#" class="login-link" data-toggle="modal" data-target="#employer-modal">LOGIN</a> </p>
+                                 <p>Already have an account? <a href="#" class="login-link" id="login-for-employer">LOGIN</a> </p>
                               </div>
                            </div>
                      </div>
                      </form>
                   </div>
-                  <div class="modal fade" id="employee-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                     <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                           <div class="modal-body">
-                              <div class="form-box">
-                                 <div class="signup-label">
-                                    <h1 class="form-header-text">SignIn</h1>
-                                 </div>
-                                 <div class="option-selector">
-                                    <div class="row">
-                                       <div class="col-lg-6 col-md-6 left-option">
-                                          <h3 style="font-size: 25px;" id="m-employee">Employee</h3>
-                                       </div>
-                                       <div class="col-lg-6 col-md-6 right-option">
-                                          <h3 style="font-size: 25px;" id="m-employer">Employer</h3>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="form-content">
-                                    <div class="container">
-                                       <form id="m-employee-form">
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="form-group">
+                  <div class="form-box" id="signin-box">
+                     <div class="signup-label">
+                        <h1 class="form-header-text">SignIn</h1>
+                     </div>
+                     <div class="option-selector">
+                        <div class="row">
+                           <div class="col-lg-6 col-md-6 left-option">
+                              <h3 style="font-size: 25px;" id="m1-employee">Employee</h3>
+                           </div>
+                           <div class="col-lg-6 col-md-6 right-option">
+                              <h3 style="font-size: 25px;" id="m1-employer">Employer</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-content">
+                        <div class="container">
+                           <form id="m1-employee-form">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
 
-                                                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-
-                                                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-12" style="text-align: center;">
-                                                <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-12 already-login">
-                                                <p>Don't have an account? <a href="#" class="login-link" data-toggle="modal" data-target="#employee-modal">SIGNUP</a> </p>
-                                             </div>
-                                          </div>
-                                       </form>
-                                       <form id="m-employer-form">
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-
-                                                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-
-                                                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-12" style="text-align: center;">
-                                                <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
-                                             </div>
-                                          </div>
-                                          <div class="row">
-                                             <div class="col-md-12 already-login">
-                                                <p>Don't have an account? <a href="#" class="login-link">SIGNUP</a> </p>
-                                             </div>
-                                          </div>
-                                       </form>
+                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                                     </div>
                                  </div>
                               </div>
-                           </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12" style="text-align: center;">
+                                    <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 already-login">
+                                    <p>Don't have an account? <a href="#" class="login-link" id="signup-for-employee">SIGNUP</a> </p>
+                                 </div>
+                              </div>
+                           </form>
+                           <form id="m1-employer-form">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12" style="text-align: center;">
+                                    <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 already-login">
+                                    <p>Don't have an account? <a href="#" class="login-link" id="signup-for-employer">SIGNUP</a> </p>
+                                 </div>
+                              </div>
+                           </form>
                         </div>
                      </div>
                   </div>
-                  <div class="modal fade" id="employer-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                     <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                           <div class="modal-body">
-                             <div class="form-box">
-                                <div class="signup-label">
-                                   <h1 class="form-header-text">SignIn</h1>
-                                </div>
-                                <div class="option-selector">
-                                   <div class="row">
-                                      <div class="col-lg-6 col-md-6 left-option">
-                                         <h3 style="font-size: 25px;" id="m1-employee">Employee</h3>
-                                      </div>
-                                      <div class="col-lg-6 col-md-6 right-option">
-                                         <h3 style="font-size: 25px;" id="m1-employer">Employer</h3>
-                                      </div>
-                                   </div>
-                                </div>
-                                <div class="form-content">
-                                   <div class="container">
-                                      <form id="m1-employee-form">
-                                         <div class="row">
-                                            <div class="col-md-12">
-                                               <div class="form-group">
-
-                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                               </div>
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-md-12">
-                                               <div class="form-group">
-
-                                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                               </div>
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-md-12" style="text-align: center;">
-                                               <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-md-12 already-login">
-                                               <p>Don't have an account? <a href="#" class="login-link" data-toggle="modal" data-target="#employee-modal">SIGNUP</a> </p>
-                                            </div>
-                                         </div>
-                                      </form>
-                                      <form id="m1-employer-form">
-                                         <div class="row">
-                                            <div class="col-md-12">
-                                               <div class="form-group">
-
-                                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                               </div>
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-md-12">
-                                               <div class="form-group">
-
-                                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                               </div>
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-md-12" style="text-align: center;">
-                                               <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-md-12 already-login">
-                                               <p>Don't have an account? <a href="#" class="login-link">SIGNUP</a> </p>
-                                            </div>
-                                         </div>
-                                      </form>
-                                   </div>
-                                </div>
-                             </div>
+                  <!-- <div class="form-box" id="signin-box-employer">
+                     <div class="signup-label">
+                        <h1 class="form-header-text">SignIn</h1>
+                     </div>
+                     <div class="option-selector">
+                        <div class="row">
+                           <div class="col-lg-6 col-md-6 left-option">
+                              <h3 style="font-size: 25px;" id="m-employee">Employee</h3>
+                           </div>
+                           <div class="col-lg-6 col-md-6 right-option">
+                              <h3 style="font-size: 25px;" id="m-employer">Employer</h3>
                            </div>
                         </div>
                      </div>
-                  </div>
+                     <div class="form-content">
+                        <div class="container">
+                           <form id="m-employee-form">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12" style="text-align: center;">
+                                    <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 already-login">
+                                    <p>Don't have an account? <a href="#" class="login-link" data-toggle="modal" data-target="#employee-modal">SIGNUP</a> </p>
+                                 </div>
+                              </div>
+                           </form>
+                           <form id="m-employer-form">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="form-group">
+
+                                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12" style="text-align: center;">
+                                    <button type="submit" class="btn btn-primary mybutt" style="margin: 0 auto;">LOG IN</button>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 already-login">
+                                    <p>Don't have an account? <a href="#" class="login-link">SIGNUP</a> </p>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div> -->
                </div>
             </div>
          </div>
