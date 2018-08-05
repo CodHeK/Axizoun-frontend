@@ -340,3 +340,13 @@ body {
   margin-top: 2em;
   margin-left: 3em;
 }
+
+div.about-content, div.about-internship, div.about-skills {
+  font-size: 20px;
+}
+
+div.company-url, div.about-skill-header {
+  font-size: 22px;
+  font-weight: 700;
+}
+
