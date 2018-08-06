@@ -68,5 +68,16 @@ $(document).ready(function() {
     $("#signup-box").fadeIn(700);
   });
 
+  $('#percent').keypress(function(e) {
+    if(e.which == 13) {
+      //alert("hello");
+      var per = $('#percent').val();
+      //alert(per);
+      var p = "p" + per;
+      //alert(p);
+      $('#match_skill').addClass(p);
+      $('.inp-skill-percent').hide();
+    }
+  });
 
 });
