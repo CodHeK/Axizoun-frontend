@@ -671,7 +671,7 @@ div.company-url, div.about-skill-header {
   border-radius: 20px;
 }
 
-.sort-list {
+.sort-list, .filter-list {
   margin-top: 2em;
   margin-left: -1em;
   max-height: 250px;

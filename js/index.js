@@ -24,11 +24,12 @@ $(document).ready(function() {
     $("#filter-list").show(500);
     $("#filter").addClass('life');
   });
+  
   $("#sort").click(function() {
     $("#filter-list").hide();
     $("#filter").removeClass('life');
     $("#sort-list").show(500);
-    $("#filter").addClass('life');
+    $("#sort").addClass('life');
   });
 
   $("#m1-employer-form").hide();
