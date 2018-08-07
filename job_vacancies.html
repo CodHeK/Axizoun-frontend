@@ -55,6 +55,60 @@
                </span>
             </div>
          </nav>
+         <div class="modal fade"  id="settings_job_vac" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content"  id="modall">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="setting-title">Settings</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                </div>
+                <div class="modal-body">
+                  <div class="option-selector-settings">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 left-option-sort">
+                           <h3 style="font-size: 25px;" id="sort">Sort</h3>
+                        </div>
+                        <div class="col-lg-6 col-md-6 right-option-filter">
+                           <h3 style="font-size: 25px;" id="filter">Filter</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sort-list" id="sort-list">
+                    <form>
+                      <ul class="sort-type">
+                        <li class="sort-type-list">By Name</li>
+                        <li class="sort-type-list">By Stipend</li>
+                        <li class="sort-type-list">By Skill Match</li>
+                        <li class="sort-type-list">By Stipend</li>
+                        <li class="sort-type-list">By Skill Match</li>
+                        <li class="sort-type-list">By Stipend</li>
+                        <li class="sort-type-list">By Skill Match</li>
+                      </ul>
+                    </form>
+                  </div>
+                  <div class="filter-list" id="filter-list">
+                    <form>
+                      <ul class="sort-type">
+                        <li class="sort-type-list">By Name</li>
+                        <li class="sort-type-list">By Date</li>
+                        <li class="sort-type-list">By Skill Match</li>
+                        <li class="sort-type-list">By Stipend</li>
+                        <li class="sort-type-list">By Skill Match</li>
+                        <li class="sort-type-list">By Stipend</li>
+                        <li class="sort-type-list">By Skill Match</li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <button type="submit" class="btn btn-primary" id="ok-btn">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
              <div class="col-md-12">
                <div class="job-box">
@@ -64,7 +118,7 @@
                          <h1 class="job-header-text">Job Vacancies</h1>
                        </div>
                        <div class="col-md-2">
-                           <a href="#" id="setta"><i class="fas fa-cog" id="settings"></i></a>
+                           <a href="#" id="setta" data-toggle="modal" data-target="#settings_job_vac"><i class="fas fa-cog" id="settings"></i></a>
                        </div>
                      </div>
                   </div>
@@ -241,9 +295,6 @@
                       </div>
                     </div>
                   </div>
-
-
-
                 </div>
               </div>
           </div>
