@@ -15,21 +15,22 @@ $(document).ready(function() {
     $("#employee").addClass('life');
   });
 
-  // $("#m-employer-form").hide();
-  // $("#m-employee").addClass('life');
-  //
-  // $("#m-employer").click(function() {
-  //   $("#m-employee-form").hide();
-  //   $("#m-employee").removeClass('life');
-  //   $("#m-employer-form").show(500);
-  //   $("#m-employer").addClass('life');
-  // });
-  // $("#m-employee").click(function() {
-  //   $("#m-employer-form").hide();
-  //   $("#m-employer").removeClass('life');
-  //   $("#m-employee-form").show(500);
-  //   $("#m-employee").addClass('life');
-  // });
+  $("#filter-list").hide();
+  $("#sort").addClass('life');
+
+  $("#filter").click(function() {
+    $("#sort-list").hide();
+    $("#sort").removeClass('life');
+    $("#filter-list").show(500);
+    $("#filter").addClass('life');
+  });
+  
+  $("#sort").click(function() {
+    $("#filter-list").hide();
+    $("#filter").removeClass('life');
+    $("#sort-list").show(500);
+    $("#sort").addClass('life');
+  });
 
   $("#m1-employer-form").hide();
   $("#m1-employee").addClass('life');
@@ -68,5 +69,16 @@ $(document).ready(function() {
     $("#signup-box").fadeIn(700);
   });
 
+  $('#percent').keypress(function(e) {
+    if(e.which == 13) {
+      //alert("hello");
+      var per = $('#percent').val();
+      //alert(per);
+      var p = "p" + per;
+      //alert(p);
+      $('#match_skill').addClass(p);
+      $('.inp-skill-percent').hide();
+    }
+  });
 
 });
